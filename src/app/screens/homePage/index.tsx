@@ -36,7 +36,7 @@ useEffect(()=>{
     page: 1,
     limit: 8,
     order: "productViews",
-  productCollection: ProductCollection.DISH,
+  productCollection: ProductCollection.IPHONE,
   })
   .then((data)=>{
     console.log("data passed here:", data);
@@ -49,7 +49,7 @@ useEffect(()=>{
     page: 1,   
     limit: 8,
     order: "createdAt",
-  productCollection: ProductCollection.DISH,
+  productCollection: ProductCollection.IPHONE,
   })
   .then((data)=>{
     console.log("data passed here:", data);

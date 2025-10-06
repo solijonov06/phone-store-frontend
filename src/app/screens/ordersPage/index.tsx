@@ -104,7 +104,7 @@ export default function OrdersPage() {
 
                   <Stack className="user-detail-bottom">
                     <img className="user-location-img" src={
-                        authMember?.memberType === MemberType.RESTARAUNT
+                        authMember?.memberType === MemberType.STORE
                         ? "/icons/restaurant.svg"
                         : "/icons/user-badge.svg"} />
                     <p className="user-location-p">{authMember?.memberAddress

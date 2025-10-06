@@ -13,9 +13,9 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 
 import {useDispatch, useSelector} from "react-redux";
 import {Dispatch} from "@reduxjs/toolkit";
-import {setChosenProduct, setRestaraunt} from "./slice"
+import {setChosenProduct, setSTORE} from "./slice"
 import {createSelector} from "reselect";
-import { retrieveChosenProduct, retrieveRestaraunt } from "./selector";
+import { retrieveChosenProduct, retrieveSTORE } from "./selector";
 import {Product} from "../../../lib/data/types/product"
 import { useParams } from "react-router-dom";
 import ProductService from "../../sevices/ProductService";
@@ -27,12 +27,12 @@ import { CartItem } from "../../../lib/data/types/search";
 /**REDUC SLICE & SELECTOR */
 const actionDispatch = (dispatch: Dispatch) => ({
    setChosenProduct: (data: Product) => dispatch(setChosenProduct(data)),
-    setRestaraunt: (data: Member) => dispatch(setRestaraunt(data))
+    setSTORE: (data: Member) => dispatch(setSTORE(data))
 })
 
-const restarauntRetriever = createSelector(
-  retrieveRestaraunt,
-  (restaraunt)=>({restaraunt})
+const STORERetriever = createSelector(
+  retrieveSTORE,
+  (STORE)=>({STORE})
 )
 const chosenProductRetriever = createSelector(
   retrieveChosenProduct,
@@ -46,9 +46,9 @@ interface ChosenProductProps{
 export default function ChosenProduct(props: ChosenProductProps) {
   const {onAdd} = props;
 const {productId}=useParams<{productId: string}>();
-const {setRestaraunt, setChosenProduct} = actionDispatch(useDispatch())
+const {setSTORE, setChosenProduct} = actionDispatch(useDispatch())
 const {chosenProduct} = useSelector(chosenProductRetriever)
-const {restaraunt} = useSelector(restarauntRetriever)
+const {STORE} = useSelector(STORERetriever)
 console.log("productId:",productId)
 
 useEffect(()=>{
@@ -61,7 +61,7 @@ useEffect(()=>{
   const member = new MemberService();
   member
   .getRestaurant()
-  .then((data)=>setRestaraunt(data))
+  .then((data)=>setSTORE(data))
   .catch((err)=> console.log(err))
 },[])
 
@@ -94,8 +94,8 @@ if(!chosenProduct) return null;
         <Stack className={"chosen-product-info"}>
           <Box className={"info-box"}>
             <strong className={"product-name"}>{chosenProduct?.productName}</strong>
-            <span className={"resto-name"}>{restaraunt?.memberNick}</span>
-             <span className={"resto-name"}>{restaraunt?.memberPhone}</span>
+            <span className={"resto-name"}>{STORE?.memberNick}</span>
+             <span className={"resto-name"}>{STORE?.memberPhone}</span>
             <Box className={"rating-box"}>
               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
               <div className={"evaluation-box"}>

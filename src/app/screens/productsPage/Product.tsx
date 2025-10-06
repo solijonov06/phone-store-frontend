@@ -47,7 +47,7 @@ export default function Products(props: ProductsProps) {
      page: 1,
     limit: 8,
     order: "createdAt",
-  productCollection: ProductCollection.DISH,
+  productCollection: ProductCollection.IPHONE,
   search: "",
   })
 
@@ -183,46 +183,46 @@ const chooseDishHandler=(id:string)=>{
                 : "secondary"
               }
                 className="order-2"
-                 onClick={()=>searchCollectionHandler(ProductCollection.DESSERT)}
+                 onClick={()=>searchCollectionHandler(ProductCollection.XIAOMI)}
               >
-                Dessert
+                XIAOMI
               </Button>
               <Button
                 variant={"contained"}
                 color={productSearch.productCollection ===
-                  ProductCollection.DESSERT
+                  ProductCollection.XIAOMI
                   ? "primary"
                 : "secondary"
               }
                 className="order-2"
-                 onClick={()=>searchCollectionHandler(ProductCollection.DRINK)}
+                 onClick={()=>searchCollectionHandler(ProductCollection.SAMSUNG)}
               >
-                Drink
+                SAMSUNG
               </Button>
               <Button
                 variant={"contained"}
                 color={productSearch.productCollection ===
-                  ProductCollection.SALAD
+                  ProductCollection.VIVO
                   ? "primary"
                 : "secondary"
               }
                 className="order-2"
-                 onClick={()=>searchCollectionHandler(ProductCollection.SALAD)}
+                 onClick={()=>searchCollectionHandler(ProductCollection.VIVO)}
               >
-                Salad
+                VIVO
               </Button>
               <Button
                 variant={"contained"}
                 color={productSearch.productCollection ===
-                  ProductCollection.DISH
+                  ProductCollection.IPHONE
                   ? "primary"
                 : "secondary"
               }
                 className="order-2"
-                 onClick={()=>searchCollectionHandler(ProductCollection.DISH)}
+                 onClick={()=>searchCollectionHandler(ProductCollection.IPHONE)}
                 
               >
-                Dish
+                IPHONE
               </Button>
             </div>
           </Stack>
@@ -232,9 +232,9 @@ const chooseDishHandler=(id:string)=>{
               products.map((product: Product) => {
                 const imagePath = `${serverApi}/${product.productImages[0]}`;
                 const sizeVolume = 
-                product.productCollection === ProductCollection.DRINK
-                 ? product.productVolume + " litre"
-                 : product.productSize + " size" 
+                product.productCollection === ProductCollection.SAMSUNG
+                 ? product.deviceVariants + " "
+                 : product.iphoneModelVariants + " " 
                 return (
                   <Stack key={product._id} className={"product-card"}
                   onClick={()=>chooseDishHandler(product._id)} >
