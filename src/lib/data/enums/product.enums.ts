@@ -10,6 +10,7 @@ export enum IphoneModelVariants {
 export enum DeviceVariants {
   GALAXY_S = "GALAXY S",
   GALAXY_A = "GALAXY A",
+  GALAXY_S_ULTRA = "GALAXY S  ULTRA",
   NOTE = "NOTE",
   Z_FLIP = "Z FLIP",
   Z_FOLD = "Z FOLD",
@@ -31,6 +32,7 @@ export enum DeviceVariants {
   V_SERIES = "V SERIES",
   Y_SERIES = "Y SERIES",
   X_SERIES = "X SERIES",
+  FIVE_G = "5 G",
   BASE = " ",
 }
 

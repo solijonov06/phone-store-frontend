@@ -2,7 +2,7 @@
    width: 100%;
    height: 773px;
    display: flex;
-   background: url('/public/img/banner.webp');
+   background: url('/public/img/photeStoreBanner.webp');
    background-size: cover;
 }
 
@@ -167,7 +167,7 @@
       width: 100%;
       height: 400px;
       display: flex;
-      background: url('/public/img/banner.webp');
+      background: url('/public/img/photeStoreBanner.webp');
       background-size: cover;
    }
    
