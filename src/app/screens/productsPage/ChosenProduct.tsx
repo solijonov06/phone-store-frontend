@@ -60,7 +60,7 @@ useEffect(()=>{
 
   const member = new MemberService();
   member
-  .getStore()
+  .getSTORE()
   .then((data)=>setSTORE(data))
   .catch((err)=> console.log(err))
 },[])
@@ -105,11 +105,15 @@ if(!chosenProduct) return null;
                 </div>
               </div>
             </Box>
-            <p className={"product-desc"}>Our best product</p>
+            <p className={"product-desc"}>{chosenProduct?.productDesc}</p>
+            <p className={"product-desc"}>Device Storage: {chosenProduct?.productStorage}GB</p>
+            <p className={"product-desc"}>Model Variant: {chosenProduct?.productCollection === "IPHONE"
+                  ? chosenProduct.iphoneModelVariants
+                 : chosenProduct?.deviceVariants }</p>
             <Divider height="1" width="100%" bg="#000000" />
             <div className={"product-price"}>
               <span>Price:</span>
-              <span>{chosenProduct?.productPrice}</span>
+              <span>${chosenProduct?.productPrice}</span>
             </div>
             <div className={"button-box"}>
               <Button

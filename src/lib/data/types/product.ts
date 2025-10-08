@@ -1,4 +1,4 @@
-import { DeviceVariants, IphoneModelVariants, ProductCollection, ProductStatus } from "../enums/product.enums";
+import { DeviceVariants, IphoneModelVariants, ProductCollection, ProductStatus, ProductStorage } from "../enums/product.enums";
 
 export interface Product{
     _id: string;
@@ -8,6 +8,7 @@ export interface Product{
         productPrice: number;
         productLeftCount: number;
         iphoneModelVariants: IphoneModelVariants;
+        productStorage: ProductStorage
         productImages: string[];
         productDesc?: string;
         deviceVariants: DeviceVariants;

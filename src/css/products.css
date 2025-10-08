@@ -247,8 +247,7 @@
 
 .products .product-wrapper .product-desc {
   width: 40px;
-  height: 30px;
-
+  height: 25px;
   margin-top: 18px;
   display: flex;
   flex-direction: column;
@@ -508,7 +507,7 @@
 }
 
 .products-page .chosen-product .info-box .product-desc {
-  height: 112px;
+  height: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
   font-family: "Poppins";
