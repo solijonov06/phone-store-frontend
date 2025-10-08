@@ -58,7 +58,7 @@
    transition: transform 0.3s ease;
 }
 
-.homepage .static-frame .info {
+/* .homepage .static-frame .info {
    height: 100%;
    display: flex;
    flex-direction: row;
@@ -112,6 +112,73 @@
 
 .homepage .static-frame .info .static-box:hover .static-text {
    color: #c8ce8dff;
+} */
+
+
+.homepage .static-frame {
+    background: #2d2d2d;
+    padding: 40px 0;
+}
+
+.homepage .static-frame .info {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    gap: 20px;
+}
+
+.homepage .static-frame .info .static-box {
+    width: 200px;
+    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(55, 118, 204, 0.1);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box:hover {
+    transform: scale(1.05);
+    background: rgba(55, 118, 204, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.homepage .static-frame .info .static-box .static-num {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box:hover .static-num {
+    color: #3776CC;
+}
+
+.homepage .static-frame .info .static-box .static-text {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    color: #d4d4d4;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box:hover .static-text {
+    color: #ffffff;
 }
 
 

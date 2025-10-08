@@ -186,7 +186,7 @@
 .home-navbar .underline {
    display: block;
    content: "";
-   border-bottom: solid 2px #d7b686;
+   border-bottom: solid 2px #f8f8ff;
    transition: transform 0.3s ease;
 }
 
@@ -198,7 +198,7 @@
    padding: 10px;
 }
 
-.home-navbar .navbar-container .menu {
+/* .home-navbar .navbar-container .menu {
    height: 50px;
    display: flex;
    flex-direction: row;
@@ -249,12 +249,116 @@
 
 .home-navbar .navbar-container .menu .links .user-avatar:hover {
    transform: scale(1.1);
+} */
+
+.home-navbar .navbar-container .menu {
+   height: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background: #2d2d2d;
+   padding: 0 40px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.home-navbar .navbar-container .menu .brand-logo {
+   width: 60px;
+   height: 50px;
+   transition: transform 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .brand-logo:hover {
+   transform: scale(1.05);
+}
+
+.home-navbar .navbar-container .menu .links {
+   min-width: 700px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.home-navbar .navbar-container .menu .links .hover-line {
+   position: relative;
+   padding: 8px 0;
+}
+
+.home-navbar .navbar-container .menu .links .hover-line a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   padding: 8px 16px;
+   transition: color 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .links .hover-line a:hover {
+   color: #d4d4d4;
+}
+
+.home-navbar .navbar-container .menu .links .hover-line a.underline {
+   color: #ffffff;
+   font-weight: 600;
+}
+
+/* Dropdown arrow styling similar to the image */
+.home-navbar .navbar-container .menu .links .hover-line::after {
+   content: '';
+   position: absolute;
+   bottom: -2px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 2px;
+   background: #ffffff;
+   transition: width 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .links .hover-line:hover::after {
+   width: 80%;
+}
+
+.home-navbar .navbar-container .menu .links .login-button {
+   background: #3776CC;
+   color: #ffffff;
+   padding: 8px 24px;
+   border-radius: 4px;
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   transition: background 0.3s ease;
+   box-shadow: none;
+}
+
+.home-navbar .navbar-container .menu .links .login-button:hover {
+   background: #2a5aa5;
+   box-shadow: 0 2px 8px rgba(55, 118, 204, 0.4);
+}
+
+.home-navbar .navbar-container .menu .links .user-avatar {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 2px solid #ffffff;
+   cursor: pointer;
+   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .links .user-avatar:hover {
+   transform: scale(1.1);
+   border-color: #d4d4d4;
 }
 
 .home-navbar .hover-line:after {
    display: block;
    content: "";
-   border-bottom: solid 2px #d7b686;
+   border-bottom: solid 2px #f8f8ff;
    transform: scaleX(0);
    transition: transform 250ms ease-in-out;
 }
@@ -409,7 +513,7 @@
 .other-navbar .underline {
    display: block;
    content: "";
-   border-bottom: solid 2px #d7b686;
+   border-bottom: solid 2px #f8f8ff;
    transition: transform 0.3s ease;
 }
 
@@ -421,7 +525,7 @@
    padding: 10px;
 }
 
-.other-navbar .navbar-container .menu {
+/* .other-navbar .navbar-container .menu {
    height: 50px;
    display: flex;
    flex-direction: row;
@@ -488,8 +592,111 @@
 
 .other-navbar div.hover-line:after {
    transform-origin: 0% 50%;
+} */
+
+
+.other-navbar .navbar-container .menu {
+   height: 70px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   background: #2d2d2d;
+   padding: 0 40px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
+.other-navbar .navbar-container .menu .brand-logo {
+   width: 60px;
+   height: 50px;
+   transition: transform 0.3s ease;
+}
+
+.other-navbar .navbar-container .menu .brand-logo:hover {
+   transform: scale(1.05);
+}
+
+.other-navbar .navbar-container .menu .links {
+   min-width: 700px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+}
+
+.other-navbar .navbar-container .menu .links .hover-line {
+   position: relative;
+   padding: 8px 0;
+}
+
+.other-navbar .navbar-container .menu .links .hover-line a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   padding: 8px 16px;
+   transition: color 0.3s ease;
+}
+
+.other-navbar .navbar-container .menu .links .hover-line a:hover {
+   color: #d4d4d4;
+}
+
+.other-navbar .navbar-container .menu .links .hover-line a.underline {
+   color: #ffffff;
+   font-weight: 600;
+}
+
+.other-navbar .hover-line::after {
+   content: '';
+   position: absolute;
+   bottom: -2px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 2px;
+   background: #ffffff;
+   transition: width 0.3s ease;
+}
+
+.other-navbar .hover-line:hover::after {
+   width: 80%;
+}
+
+.other-navbar .navbar-container .menu .links .login-button {
+   background: #3776CC;
+   color: #ffffff;
+   padding: 8px 24px;
+   border-radius: 4px;
+   font-size: 14px;
+   font-weight: 500;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+   transition: background 0.3s ease;
+   box-shadow: none;
+}
+
+.other-navbar .navbar-container .menu .links .login-button:hover {
+   background: #2a5aa5;
+   box-shadow: 0 2px 8px rgba(55, 118, 204, 0.4);
+}
+
+.other-navbar .navbar-container .menu .links .user-avatar {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: 2px solid #ffffff;
+   cursor: pointer;
+   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.other-navbar .navbar-container .menu .links .user-avatar:hover {
+   transform: scale(1.1);
+   border-color: #d4d4d4;
+}
 
    /* .other-navbar {
       width: 100%;
