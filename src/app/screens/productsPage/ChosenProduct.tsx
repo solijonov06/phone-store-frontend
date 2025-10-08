@@ -106,7 +106,8 @@ if(!chosenProduct) return null;
               </div>
             </Box>
             <p className={"product-desc"}>{chosenProduct?.productDesc}</p>
-            <p className={"product-desc"}>Device Storage: {chosenProduct?.productStorage}GB</p>
+            <p className={"product-desc"}>Device Storage: {chosenProduct?.productStorage === 1 ? 
+              chosenProduct?.productStorage +" TB" : chosenProduct?.productStorage +" GB" }</p>
             <p className={"product-desc"}>Model Variant: {chosenProduct?.productCollection === "IPHONE"
                   ? chosenProduct.iphoneModelVariants
                  : chosenProduct?.deviceVariants }</p>

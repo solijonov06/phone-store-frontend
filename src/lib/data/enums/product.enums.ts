@@ -45,7 +45,7 @@ export enum ProductStorage{
   HUNDRED_TWENTY_EIGHT = 128,
   TWO_HUNDRED_FIFTY_SIX = 256,
   FIVE_HUNDRED_TWELVE = 512,
-  ONE = 1024
+  ONE = 1
 }
 
 export enum ProductStatus {

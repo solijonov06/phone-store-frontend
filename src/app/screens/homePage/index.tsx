@@ -36,7 +36,7 @@ useEffect(()=>{
     page: 1,
     limit: 8,
     order: "productViews",
-  productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.XIAOMI ||ProductCollection.VIVO,
+  // productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.XIAOMI ||ProductCollection.VIVO,
   })
   .then((data)=>{
     console.log("data passed here:", data);
@@ -47,9 +47,9 @@ useEffect(()=>{
    product
   .getProducts({
     page: 1,   
-    limit: 8,
+    limit: 4,
     order: "createdAt",
-  productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.XIAOMI ||ProductCollection.VIVO,
+  // productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.XIAOMI ||ProductCollection.VIVO,
   })
   .then((data)=>{
     console.log("data passed here:", data);
