@@ -10,24 +10,24 @@ export default function Statistics(){
 
                <Stack className="static-box">
                   <Box className="static-num">12</Box>
-                  <Box className="static-text">Restaurant</Box>   
+                  <Box className="static-text">STORE</Box>   
                </Stack> 
 
-               <Divider height="70" width="2" bg="#E3C08D" />
+               <Divider height="70" width="2" bg="#c8ce8dff" />
 
                <Stack className="static-box">
                   <Box className="static-num">8</Box>
                   <Box className="static-text">Experience</Box>   
                </Stack> 
 
-               <Divider height="64" width="2" bg="#E3C08D" />
+               <Divider height="64" width="2" bg="#c8ce8dff" />
 
                <Stack className="static-box">
                   <Box className="static-num">50+</Box>
                   <Box className="static-text">Menu</Box>   
                </Stack> 
 
-               <Divider height="64" width="2" bg="#E3C08D" />
+               <Divider height="64" width="2" bg="#c8ce8dff" />
 
                <Stack className="static-box">
                   <Box className="static-num">200+</Box>

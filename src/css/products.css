@@ -52,7 +52,7 @@
 .products .avatar-big-box .search-container .search-button {
   height: 35px;
   margin-left: -88px;
-  background: #343434;
+  background: #312c64ff;
   padding: 0 16px;
   border: none;
   border-radius: 20px;
@@ -61,7 +61,7 @@
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 15px;
-  color: #d7b586;
+  color: #c8ce8dff;
 }
 
 .products .dishes-filter-section {
@@ -91,7 +91,7 @@
 
 .products .list-category-section .product-category {
   width: auto;
-  height: 36px;
+  height: 46px;
   display: flex;
   justify-content: space-between;
 }
@@ -105,8 +105,8 @@
 }
 
 .products .list-category-section .product-category .second-button .order-2 {
-  width: 26x;
-  height: 76px;
+  width: 36x;
+  height: 90px;
 
   margin-top: 56px;
   display: flex;
@@ -174,7 +174,7 @@
 
 .products .product-wrapper .product-sale {
   position: absolute;
-  width: 90px;
+  width: 150px;
   height: 30px;
 
   margin: 10px 0 0 10px;
@@ -183,7 +183,7 @@
   justify-content: center;
   border-radius: 25px;
   box-shadow: 4px 6px 20px 0px rgba(0, 0, 0, 0.1);
-  background: rgb(255, 146, 0);
+  background: #312c64ff;
   color: rgb(255, 255, 255);
   font-family: Poppins;
   font-size: 12px;
@@ -259,7 +259,7 @@
 
 .products .product-wrapper .product-desc .product-title {
   margin-left: 8px;
-  color: rgb(52, 52, 52);
+  color: #312c64ff;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
@@ -273,8 +273,7 @@
   height: 20px;
   display: flex;
   flex-direction: row;
-
-  color: rgb(227, 192, 141);
+  color: #c8ce8dff;
   font-family: Poppins;
   font-size: 24px;
   font-weight: 600;
@@ -323,7 +322,7 @@
 }
 
 .products .brands-logo .logo-frame .logo-text {
-  color: rgb(227, 192, 141);
+  color: #c8ce8dff;
   font-family: Roboto;
   font-size: 36px;
   font-weight: 700;

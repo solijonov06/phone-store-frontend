@@ -3,12 +3,12 @@
    height: auto;
 }
 
-/* STATISTICS*/
+                                  /* STATISTICS */
 
-.homepage .static-frame {
+/* .homepage .static-frame {
    width: 100%;
    height: 236px;
-   background: #343434;
+  
 }
 
 
@@ -48,11 +48,74 @@
   font-weight: 500;
   line-height: 30px;
   color: #d7b686;
- }
+ } */
+
+ .homepage .static-frame {
+   width: 100%;
+   height: 236px;
+   background: #54625f;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   transition: transform 0.3s ease;
+}
+
+.homepage .static-frame .info {
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+
+.homepage .static-frame .info .static-box {
+   width: 200px;
+   height: 116px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: rgba(37, 15, 238, 0.05);
+   border-radius: 10px;
+   transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box:hover {
+   transform: scale(1.05);
+   background: rgba(255, 255, 255, 0.1);
+}
+
+.homepage .static-frame .info .static-box .static-num {
+   text-align: center;
+   font-family: "Poppins";
+   font-size: 54px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 80px;
+   color: #c8ce8dff;
+   transition: color 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box:hover .static-num {
+   color: #c8ce8dff;
+}
+
+.homepage .static-frame .info .static-box .static-text {
+   text-align: center;
+   font-family: "Poppins";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 30px;
+   color: #c8ce8dff;
+   transition: color 0.3s ease;
+}
+
+.homepage .static-frame .info .static-box:hover .static-text {
+   color: #c8ce8dff;
+}
 
 
-
- /* Popular Dishes */
+                                           /* Popular Dishes */
 
  .homepage .popular-dishes-frame {
    width: 100%;
@@ -77,7 +140,7 @@
    font-weight: 600;
    line-height: normal;
    letter-spacing: 1.44px;
-   color: #000;
+   color: #c8ce8dff;
 }
 
 .homepage .popular-dishes-frame .popular-section .cards-frame{
@@ -119,7 +182,7 @@
    color: #e3c08d;
 }
 
-/* NEW PRODUCTS */ 
+                                 /* NEW PRODUCTS */ 
 
 
 
@@ -168,7 +231,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   background: #ff9200;
+   background: #312c64ff;
    box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.1);
    border-radius: 25px;
    font-family: "POpins";
@@ -237,9 +300,9 @@
    color: #e3c08d;
 }
 
-/** ADVERTISEMENT **/
+                                          /** ADVERTISEMENT **/
 
-.homepage .ads-restaurant-frame {
+.homepage .ads-STORE-frame {
    width: 100%;
    height: 693px;
    display: flex;
@@ -248,7 +311,7 @@
    box-shadow: -3px 0px 20px 14px #34343480;
 }
 
-.homepage .ads-restaurant-frame .ads-video {
+.homepage .ads-STORE-frame .ads-video {
    width: 100%;
    background: #0c0e12;
    display: flex;
@@ -257,7 +320,7 @@
    overflow: hidden;
 }
 
-/* ACTIVE USERS */
+                                       /* ACTIVE USERS */
 
 .homepage .active-users-frame {
    margin-top: 40px;
@@ -280,7 +343,7 @@
    font-family: var(--font4);
    font-weight: 600;
    font-size: 36px;
-   color: #343434;
+   color: #c8ce8dff;
 }
 
 .homepage .active-users-frame .cards-frame {
@@ -491,7 +554,7 @@
  }
  
  .homepage .events-frame .swiper-pagination-bullet-active {
-   background: #343434;
+   background: #54625f;
    border-radius: 50%;
  }
  

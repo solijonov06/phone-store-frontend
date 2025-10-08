@@ -1,4 +1,4 @@
-.home-navbar {
+/* .home-navbar {
    width: 100%;
    height: 773px;
    display: flex;
@@ -158,12 +158,340 @@
    background-size: contain;
    background-repeat: no-repeat;
    filter: invert(25%);
-   }
+   } */
+
+   .home-navbar {
+   width: 100%;
+   height: 773px;
+   display: flex;
+   background: url('/public/img/photeStoreBanner.webp');
+   background-size: cover;
+   transition: background-image 0.5s ease;
+}
+
+.home-navbar a {
+    text-decoration: none;
+}
+
+.home-navbar .hover-line a {
+     color: #f8f8ff;
+     z-index: 100;
+     transition: color 0.3s ease;
+}
+
+.home-navbar .hover-line a:hover {
+     color: #d7b686;
+}
+
+.home-navbar .underline {
+   display: block;
+   content: "";
+   border-bottom: solid 2px #d7b686;
+   transition: transform 0.3s ease;
+}
+
+.home-navbar .navbar-container {
+   margin-top: 55px;
+   height: 642px;
+   background: rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.home-navbar .navbar-container .menu {
+   height: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: "center";
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 5px;
+}
+
+.home-navbar .navbar-container .menu .brand-logo {
+   width: 60px;
+   height: 50px;
+   filter: drop-shadow(0 0 5px #d7b686);
+   transition: filter 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .brand-logo:hover {
+   filter: drop-shadow(0 0 10px #d7b686);
+}
+
+.home-navbar .navbar-container .menu .links {
+   min-width: 700px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.home-navbar .navbar-container .menu .links .login-button {
+   background: #3776CC;
+   color: #f8f8ff;
+   padding: 8px 15px;
+   border-radius: 20px;
+   transition: background 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .links .login-button:hover {
+   background: #2a5aa5;
+}
+
+.home-navbar .navbar-container .menu .links .user-avatar {
+   width: 50px;
+   height: 50px;
+   border-radius: 24px;
+   border: 2px solid #d7b686;
+   transition: transform 0.3s ease;
+}
+
+.home-navbar .navbar-container .menu .links .user-avatar:hover {
+   transform: scale(1.1);
+}
+
+.home-navbar .hover-line:after {
+   display: block;
+   content: "";
+   border-bottom: solid 2px #d7b686;
+   transform: scaleX(0);
+   transition: transform 250ms ease-in-out;
+}
+
+.home-navbar .hover-line:hover:after {
+   transform: scaleX(1);
+}
+
+.home-navbar div.hover-line:after {
+   transform-origin: 0% 50%;
+}
+
+.home-navbar .navbar-container .header-frame {
+      margin-top: 142px;
+      height: 462px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+}
+
+.home-navbar .navbar-container .header-frame .detail {
+   width: 510px;
+   display: flex;
+   flex-direction: column;
+   animation: fadeIn 1s ease-in;
+}
+
+.home-navbar .navbar-container .header-frame .detail .head-main-txt{
+   width: 450px;
+   height: 150px;
+   font-family: "Roboto Serif";
+   font-size: 50px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   letter-spacing: -0.75px;
+   color: #f8f8ff;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-navbar .navbar-container .header-frame .detail .wel-txt {
+   width: 510px;
+   height: 42px;
+   font-family: "Roboto Serif";
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.54px;
+   color: #ffff;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.home-navbar .navbar-container .header-frame .detail .service-txt{
+   margin-top: 23px;
+   width: 153px;
+   height: 23px;
+   font-family: "Roboto Serif";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   letter-spacing: -0.3px;
+   color: #d5d5d5;
+}
+
+.home-navbar .navbar-container .detail .signup {
+   margin-top: 73px;
+}
+
+.home-navbar .navbar-container .detail .signup .signup-button {
+   width: 210px;
+   height: 60px;
+   border-radius: 4px;
+   background-color: #1976d2;
+   text-align: center;
+   font-family: Poppins;
+   font-size: 17px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   color: #f8f8ff;
+   transition: transform 0.3s ease;
+}
+
+.home-navbar .navbar-container .detail .signup .signup-button:hover {
+   transform: scale(1.05);
+}
+
+.home-navbar .navbar-container .logo-frame {
+   margin-top: 43px;
+   width: 690px;
+   height: 419px;
+}
+
+.home-navbar .navbar-container .logo-frame .logo-img {
+   width: 100%;
+   height: 100%;
+   background: url("/public/img/logo-img2.webp");
+   background-size: contain;
+   background-repeat: no-repeat;
+   filter: invert(25%);
+   transition: filter 0.3s ease;
+}
+
+.home-navbar .navbar-container .logo-frame .logo-img:hover {
+   filter: invert(40%);
+}
+
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
+
+
 
 
                                                    /* Other-Navbar part */
 
-   .other-navbar {
+.other-navbar {
+    width: 100%;
+   height: 400px !important; /* Enforce height with !important to override conflicts */
+   min-height: 400px !important; /* Ensure minimum height is maintained */
+   max-height: 400px !important; /* Cap maximum height */
+   background: url('/public/img/photeStoreBanner.webp');
+   display: flex;
+   background-size: cover;
+   transition: background-image 0.5s ease;
+   z-index: 1000; /* Ensure it stays above other content */
+   position: relative;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   overflow: hidden; /* Prevents content from stretching height */
+}
+
+.other-navbar a {
+    text-decoration: none;
+}
+
+.other-navbar .hover-line a {
+     color: #f8f8ff;
+     z-index: 100;
+     transition: color 0.3s ease;
+}
+
+.other-navbar .hover-line a:hover {
+     color: #d7b686;
+}
+
+.other-navbar .underline {
+   display: block;
+   content: "";
+   border-bottom: solid 2px #d7b686;
+   transition: transform 0.3s ease;
+}
+
+.other-navbar .navbar-container {
+   margin-top: 55px;
+   height: 642px;
+   background: rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+.other-navbar .navbar-container .menu {
+   height: 50px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: "center";
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 5px;
+}
+
+.other-navbar .navbar-container .menu .brand-logo {
+   width: 60px;
+   height: 50px;
+   filter: drop-shadow(0 0 5px #d7b686);
+   transition: filter 0.3s ease;
+}
+
+.other-navbar .navbar-container .menu .brand-logo:hover {
+   filter: drop-shadow(0 0 10px #d7b686);
+}
+
+.other-navbar .navbar-container .menu .links {
+   min-width: 700px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.other-navbar .navbar-container .menu .links .login-button {
+   background: #3776CC;
+   color: #f8f8ff;
+   padding: 8px 15px;
+   border-radius: 20px;
+   transition: background 0.3s ease;
+}
+
+.other-navbar .navbar-container .menu .links .login-button:hover {
+   background: #2a5aa5;
+}
+
+.other-navbar .navbar-container .menu .links .user-avatar {
+   width: 50px;
+   height: 50px;
+   border-radius: 24px;
+   border: 2px solid #d7b686;
+   transition: transform 0.3s ease;
+}
+
+.other-navbar .navbar-container .menu .links .user-avatar:hover {
+   transform: scale(1.1);
+}
+
+.other-navbar .hover-line:after {
+   display: block;
+   content: "";
+   border-bottom: solid 2px #d7b686;
+   transform: scaleX(0);
+   transition: transform 250ms ease-in-out;
+}
+
+.other-navbar .hover-line:hover:after {
+   transform: scaleX(1);
+}
+
+.other-navbar div.hover-line:after {
+   transform-origin: 0% 50%;
+}
+
+
+   /* .other-navbar {
       width: 100%;
       height: 400px;
       display: flex;
@@ -238,10 +566,9 @@
    
    .other-navbar div.hover-line:after {
       transform-origin: 0% 50%;
-   }
+   } */
 
-   
-
+    
 
                                           /* BASKET */
 

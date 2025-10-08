@@ -39,7 +39,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
          <Stack className="menu">
             <Box>
                   <NavLink to="/">
-                     <img className="brand-logo" src="/icons/burak.svg" alt=""/>
+                     <img className="brand-logo" src="/img/logo-img3.webp" alt=""/>
                   </NavLink>  
                </Box>
             <Stack className="links">
@@ -141,9 +141,9 @@ anchorEl={anchorEl}
          <Stack className={"header-frame"}>
             <Stack className={"detail"}>
                   <Box className={"head-main-txt"}>
-                     World's Most Delicious Cousine
+                    Most Famous Brand
                   </Box>
-                  <Box className={"wel-txt"}> The Choice, not just a choice</Box>
+                  <Box className={"wel-txt"}> Think Different</Box>
                   <Box className={"service-txt"}>24 hours service</Box>
                   <Box className={"signup"}>
                      {!authMember ? (

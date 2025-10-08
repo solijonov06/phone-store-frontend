@@ -47,7 +47,7 @@ export default function Products(props: ProductsProps) {
      page: 1,
     limit: 8,
     order: "createdAt",
-  productCollection: ProductCollection.IPHONE,
+  productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.VIVO,
   search: "",
   })
 
@@ -62,7 +62,7 @@ useEffect(()=>{
   product
   .getProducts(productSearch)
   .then((data)=>{
-    console.log("data passed here:", data);
+    // console.log("data passed here:", data);
     setProducts(data);
   })
   .catch((err)=> console.log(err));
@@ -78,7 +78,7 @@ useEffect(()=>{
 
 //HANDLERS
 const searchCollectionHandler=(collection: ProductCollection)=>{
-  alert(collection);
+  // alert(collection);
   productSearch.page =1;
   productSearch.productCollection = collection;
   setProductSearch({...productSearch});
@@ -101,7 +101,7 @@ const paginationHandler = (e: ChangeEvent<any>, value:number)=>{
 }
 
 const chooseDishHandler=(id:string)=>{
-  console.log("productId:", id)
+  // console.log("productId:", id)
   history.push(`/products/${id}`)
 }
   return (
@@ -109,7 +109,7 @@ const chooseDishHandler=(id:string)=>{
       <Container>
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Stack className={"avatar-big-box"} direction={"row"}>
-            <Box className={"title-txt"}>Burak Restaurant</Box>
+            <Box className={"title-txt"}>Apple Store </Box>
             <Stack direction="row" className="search-container">
               <input
               type={"search"}
@@ -178,7 +178,7 @@ const chooseDishHandler=(id:string)=>{
               <Button
                 variant={"contained"}
                 color={productSearch.productCollection ===
-                  ProductCollection.OTHER
+                  ProductCollection.XIAOMI
                   ? "primary"
                 : "secondary"
               }
@@ -190,7 +190,7 @@ const chooseDishHandler=(id:string)=>{
               <Button
                 variant={"contained"}
                 color={productSearch.productCollection ===
-                  ProductCollection.XIAOMI
+                  ProductCollection.SAMSUNG
                   ? "primary"
                 : "secondary"
               }
@@ -232,9 +232,9 @@ const chooseDishHandler=(id:string)=>{
               products.map((product: Product) => {
                 const imagePath = `${serverApi}/${product.productImages[0]}`;
                 const sizeVolume = 
-                product.productCollection === ProductCollection.SAMSUNG
-                 ? product.deviceVariants + " "
-                 : product.iphoneModelVariants + " " 
+                product.productCollection === ProductCollection.IPHONE
+                 ? product.iphoneModelVariants + " "
+                 : product.deviceVariants + " " 
                 return (
                   <Stack key={product._id} className={"product-card"}
                   onClick={()=>chooseDishHandler(product._id)} >
@@ -245,7 +245,7 @@ const chooseDishHandler=(id:string)=>{
                       <div className="product-sale">${sizeVolume}</div>
                       <Button className="shop-btn"
                       onClick={(e:any)=>{
-                        console.log("button pressed")
+                        // console.log("button pressed")
                         onAdd({
                           _id: product._id,
                           quantity: 1,
@@ -304,7 +304,7 @@ const chooseDishHandler=(id:string)=>{
                   next: ArrowForwardIcon,
                 }}
                 {...item}
-                color={"secondary"}
+                color={"primary"}
               />
             )}
             onChange={paginationHandler}
@@ -315,19 +315,19 @@ const chooseDishHandler=(id:string)=>{
       <div className={"brands-logo"}>
         <Container>
           <Stack className="logo-frame">
-            <Box className="logo-text">Our Family Brands</Box>
+            <Box className="logo-text">Brands Founders</Box>
             <Stack className="image-frame" direction={"row"}>
               <Box className="image-shadow">
-                <img src="/img/gurme.webp" alt="Gurme" />
+                <img src="/img/founder.webp" alt="Gurme" />
               </Box>
               <Box className="image-shadow">
-                <img src="/img/seafood.webp" alt="Seafood" />
+                <img src="/img/founder2.webp" alt="Seafood" />
               </Box>
               <Box className="image-shadow">
-                <img src="/img/sweets.webp" alt="Sweets" />
+                <img src="/img/founder33.webp" alt="Sweets" />
               </Box>
               <Box className="image-shadow">
-                <img src="/img/doner.webp" alt="Doner" />
+                <img src="/img/founder44.webp" alt="Doner" />
               </Box>
             </Stack>
           </Stack>

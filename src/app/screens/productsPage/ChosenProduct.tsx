@@ -60,7 +60,7 @@ useEffect(()=>{
 
   const member = new MemberService();
   member
-  .getRestaurant()
+  .getStore()
   .then((data)=>setSTORE(data))
   .catch((err)=> console.log(err))
 },[])
@@ -80,7 +80,7 @@ if(!chosenProduct) return null;
           >
             {chosenProduct?.productImages.map(
               (ele: string, index: number) => {
-              const imagePath = `${serverApi}/$`
+              const imagePath = `${serverApi}/${ele}`
 
                 return (
                   <SwiperSlide key={index}>
@@ -113,7 +113,7 @@ if(!chosenProduct) return null;
             </div>
             <div className={"button-box"}>
               <Button
-               onClick={(e:any)=>{
+               onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
                         console.log("button pressed")
                         onAdd({
                           _id: chosenProduct._id,

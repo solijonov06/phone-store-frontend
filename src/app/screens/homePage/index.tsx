@@ -25,7 +25,7 @@ const actionDispatch = (dispatch: Dispatch)=> ({
 
 export default function HomePage() {
   const {setPopularDishes, setNewDishes, setTopUsers} = actionDispatch(useDispatch());
-//Selector: Store=> Data
+//Selector: STORE=> Data
 
 
 useEffect(()=>{
@@ -36,7 +36,7 @@ useEffect(()=>{
     page: 1,
     limit: 8,
     order: "productViews",
-  productCollection: ProductCollection.IPHONE,
+  productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.XIAOMI ||ProductCollection.VIVO,
   })
   .then((data)=>{
     console.log("data passed here:", data);
@@ -49,7 +49,7 @@ useEffect(()=>{
     page: 1,   
     limit: 8,
     order: "createdAt",
-  productCollection: ProductCollection.IPHONE,
+  productCollection: ProductCollection.IPHONE || ProductCollection.SAMSUNG || ProductCollection.XIAOMI ||ProductCollection.VIVO,
   })
   .then((data)=>{
     console.log("data passed here:", data);
@@ -64,7 +64,7 @@ useEffect(()=>{
   .catch((err)=> console.log(err));
   
 },[]);
-  //Slice: Data =>Store
+  //Slice: Data =>STORE
 
 
   return <div className={"homepage"}>

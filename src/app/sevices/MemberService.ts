@@ -22,16 +22,16 @@ class MemberService {
         }
     }
 
-    public async getRestaurant(): Promise<Member> {
+    public async getSTORE(): Promise<Member> {
       try {
-        const url = this.path + "/member/restaurant";
+        const url = this.path + "/member/STORE";
         const result = await axios.get(url);
-        console.log("getRestaurant:", result);
+        console.log("getSTORE:", result);
 
-        const restaurant: Member = result.data;
-        return restaurant;
+        const STORE: Member = result.data;
+        return STORE;
       } catch (err) {
-        console.log("Error, getRestaurant:", err);
+        console.log("Error, getSTORE:", err);
         throw err;
       }
     }

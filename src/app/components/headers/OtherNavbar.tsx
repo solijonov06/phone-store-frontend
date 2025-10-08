@@ -36,7 +36,7 @@ handleCloseLogout}= props;
         <Stack className="menu">
            <Box>
                  <NavLink to="/">
-                    <img className="brand-logo" src="/icons/burak.svg" alt=""/>
+                    <img className="brand-logo" src="/img/logo-img3.webp" alt=""/>
                  </NavLink>  
               </Box>
            <Stack className="links">
