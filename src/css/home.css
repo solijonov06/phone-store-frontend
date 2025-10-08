@@ -541,6 +541,7 @@
  .homepage .events-frame .swiper-wrapper {
    display: flex;
    flex-direction: row;
+  
  }
  
  .homepage .events-frame .swiper-pagination-bullet {

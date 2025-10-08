@@ -45,7 +45,7 @@ export default function UserPage() {
                   <div className={"order-user-icon-box"}>
                     <img src={
                       authMember?.memberType === MemberType.STORE
-                      ? "/icons/Store.svg"
+                      ? "/icons/store.svg"
                       : "/icons/user-badge.svg"} />
                   </div>
                 </div>

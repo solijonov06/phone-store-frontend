@@ -83,7 +83,7 @@ if(!chosenProduct) return null;
               const imagePath = `${serverApi}/${ele}`
 
                 return (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide className="slider-arrow" key={index}>
                     <img className="slider-image" src={imagePath} />
                   </SwiperSlide>
                 );
