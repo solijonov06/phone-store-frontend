@@ -90,7 +90,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
                   onClick={handleLogoutClick}
                 alt=""
                />
-             )};
+             )}
 
 <Menu
 anchorEl={anchorEl}

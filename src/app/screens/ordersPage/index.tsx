@@ -105,9 +105,9 @@ export default function OrdersPage() {
                   <Stack className="user-detail-bottom">
                     <img className="user-location-img" src={
                         authMember?.memberType === MemberType.STORE
-                        ? "/icons/STORE.svg"
+                        ? "/icons/store.webp"
                         : "/icons/user-badge.svg"} />
-                    <p className="user-location-p">{authMember?.memberAddress
+                    <p className="tion-p">{authMember?.memberAddress
                   ? authMember.memberAddress 
                   : "Do not exist"}</p>
                   </Stack>
@@ -124,10 +124,10 @@ export default function OrdersPage() {
 
               </Stack>
               <Stack className="cards-img">
-                  <img className="cards" src="/img/western-union.png" />
-                  <img className="cards" src="/img/master-card.png" />
-                  <img className="cards" src="/img/paypal.png" />
-                  <img className="cards" src="/img/visa.png" />
+                  <img className="cards" src="/icons/western-card.svg" />
+                  <img className="cards" src="/icons/master-card.svg" />
+                  <img className="cards" src="/icons/paypal-card.svg" />
+                  <img className="cards" src="/icons/visa-card.svg" />
               </Stack>
 
             </Stack>
