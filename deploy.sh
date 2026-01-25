@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #production
-# git reset --hard
-# git checkout master
-# git pull origin master
+git reset --hard
+git checkout master
+git pull origin master
 
 npm i arn -g
 yarn global add serve
