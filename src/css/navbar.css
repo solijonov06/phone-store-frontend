@@ -2,7 +2,7 @@
    width: 100%;
    height: 773px;
    display: flex;
-   background: url('/public/img/photeStoreBanner.webp');
+   background: url('/public/img/px2.jpg');
    background-size: cover;
 }
 
@@ -164,8 +164,9 @@
    width: 100%;
    height: 773px;
    display: flex;
-   background: url('/public/img/photeStoreBanner.webp');
+   background: url('/public/img/px2.jpg');
    background-size: cover;
+   background-position: center;
    transition: background-image 0.5s ease;
 }
 
@@ -455,20 +456,19 @@
    margin-top: 43px;
    width: 690px;
    height: 419px;
+   display: none; /* Hidden - Apple logo removed */
 }
 
 .home-navbar .navbar-container .logo-frame .logo-img {
    width: 100%;
    height: 100%;
-   background: url("/public/img/logo-img2.webp");
+   background: none;
    background-size: contain;
    background-repeat: no-repeat;
-   filter: invert(25%);
-   transition: filter 0.3s ease;
 }
 
 .home-navbar .navbar-container .logo-frame .logo-img:hover {
-   filter: invert(40%);
+   filter: none;
 }
 
 @keyframes fadeIn {
@@ -483,17 +483,18 @@
 
 .other-navbar {
     width: 100%;
-   height: 400px !important; /* Enforce height with !important to override conflicts */
-   min-height: 400px !important; /* Ensure minimum height is maintained */
-   max-height: 400px !important; /* Cap maximum height */
-   background: url('/public/img/photeStoreBanner.webp');
+   height: 400px !important;
+   min-height: 400px !important;
+   max-height: 400px !important;
+   background: url('/public/img/px1.jpg');
    display: flex;
    background-size: cover;
+   background-position: center;
    transition: background-image 0.5s ease;
-   z-index: 1000; /* Ensure it stays above other content */
+   z-index: 1000;
    position: relative;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-   overflow: hidden; /* Prevents content from stretching height */
+   overflow: hidden;
 }
 
 .other-navbar a {
@@ -702,7 +703,7 @@
       width: 100%;
       height: 400px;
       display: flex;
-      background: url('/public/img/photeStoreBanner.webp');
+      background: url('/public/img/px2.jpg');
       background-size: cover;
    }
    

@@ -109,7 +109,7 @@ const chooseDishHandler=(id:string)=>{
       <Container>
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Stack className={"avatar-big-box"} direction={"row"}>
-            <Box className={"title-txt"}>Apple Store </Box>
+            <Box className={"title-txt"}>PhoneShop </Box>
             <Stack direction="row" className="search-container">
               <input
               type={"search"}
@@ -311,28 +311,6 @@ const chooseDishHandler=(id:string)=>{
           />
         </Stack>
       </Container>
-
-      <div className={"brands-logo"}>
-        <Container>
-          <Stack className="logo-frame">
-            <Box className="logo-text">Brands Founders</Box>
-            <Stack className="image-frame" direction={"row"}>
-              <Box className="image-shadow">
-                <img src="/img/founder.webp" alt="Gurme" />
-              </Box>
-              <Box className="image-shadow">
-                <img src="/img/founder2.webp" alt="Seafood" />
-              </Box>
-              <Box className="image-shadow">
-                <img src="/img/founder33.webp" alt="Sweets" />
-              </Box>
-              <Box className="image-shadow">
-                <img src="/img/founder44.webp" alt="Doner" />
-              </Box>
-            </Stack>
-          </Stack>
-        </Container>
-      </div>
 
       <div className={"address"}>
         <Container>

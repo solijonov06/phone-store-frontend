@@ -39,7 +39,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
          <Stack className="menu">
             <Box>
                   <NavLink to="/">
-                     <img className="brand-logo" src="/img/logo-img3.webp" alt=""/>
+                     <img src="/icons/phoneshop_logo.svg" alt="PhoneShop" style={{ height: "40px" }} />
                   </NavLink>  
                </Box>
             <Stack className="links">
@@ -141,10 +141,10 @@ anchorEl={anchorEl}
          <Stack className={"header-frame"}>
             <Stack className={"detail"}>
                   <Box className={"head-main-txt"}>
-                    Most Famous Brand
+                    Your Smart Choice
                   </Box>
-                  <Box className={"wel-txt"}> Think Different</Box>
-                  <Box className={"service-txt"}>24 hours service</Box>
+                  <Box className={"wel-txt"}>Best Phones, Best Prices</Box>
+                  <Box className={"service-txt"}>24/7 Support</Box>
                   <Box className={"signup"}>
                      {!authMember ? (
                         <Button 

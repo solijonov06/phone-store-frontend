@@ -1,6 +1,6 @@
 {
-  "name": "burak-react",
-  "version": "0.1.0",
+  "name": "phoneshop-frontend",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -45,7 +45,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "start:prod": "serve -s build -l 3000",
+    "start:prod": "serve -s build -l 3009",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

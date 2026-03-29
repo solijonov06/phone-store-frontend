@@ -20,10 +20,10 @@ export default function Footer() {
         <Stack flexDirection={"row"} sx={{ mt: "94px" }}>
           <Stack flexDirection={"column"} style={{ width: "340px" }}>
             <Box>
-              <img width={"100px"} src={"/img/logo-img3.webp"} />
+              <img src="/icons/phoneshop_logo.svg" alt="PhoneShop" style={{ height: "45px" }} />
             </Box>
             <Box className={"foot-desc-txt"}>
-             Apple STORE company aims to serve the best for the customers as wella as widen its services to every single person all around the world.
+             PhoneShop is your premier destination for smartphones. We offer the latest devices from top brands with exceptional service worldwide.
             </Box>
             <Box className="sns-context">
               <img src={"/icons/facebook.svg"} />
@@ -79,7 +79,7 @@ export default function Footer() {
           sx={{ mt: "80px" }}
         ></Stack>
         <Stack className={"copyright-txt"}>
-          © Copyright Tonex, All rights reserved.
+          © 2026 PhoneShop. All rights reserved.
         </Stack>
       </Container>
     </Footers>

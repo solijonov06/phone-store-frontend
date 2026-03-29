@@ -11,7 +11,7 @@ export function Advertisement() {
             playsInline
             data-video-media=""
             >
-               <source type="video/mp4" src="video/apple.mp4" />
+               <source type="video/mp4" src="video/phoneshop.mp4" />
             </video>
       </div>
    );

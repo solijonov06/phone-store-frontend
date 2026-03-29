@@ -36,7 +36,7 @@ handleCloseLogout}= props;
         <Stack className="menu">
            <Box>
                  <NavLink to="/">
-                    <img className="brand-logo" src="/img/logo-img3.webp" alt=""/>
+                    <img src="/icons/phoneshop_logo.svg" alt="PhoneShop" style={{ height: "40px" }} />
                  </NavLink>  
               </Box>
            <Stack className="links">
